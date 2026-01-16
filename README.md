@@ -4,7 +4,7 @@ Read Data from JK_PB1A16S10P and many other newer JK BMS over BLE and publish on
 This script tested on a Pi4 wiith bluetooth.
 
 - Set your MQTT IP/Port in script or NO mqtt under "MQTT"
-- Set your Blutooth device names under "DEVICE_NAMES"
+- Set your Bluetooth JK_BMS device names under "DEVICE_NAMES"
 - Set SLEEP in seconds for polling intervall
 
 MQTT Topic is "JK/devName"
@@ -16,3 +16,6 @@ from NotANewNick
 - Added functions to make sure each device is checked
 - Added function to update the last_activity_time on real actions
 - Added persistence to the list of checked devices
+
+V2.2.3
+- all registers from modbusV1.1 are implemented (info,settings,data)
